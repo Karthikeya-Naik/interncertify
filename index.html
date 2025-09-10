@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Verified Certificate Generator</title>
+    <meta name="description" content="AI Verified Certificate - Intern Certify">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Certificate Content -->
+        <div class="certificate-container" id="certificateContainer">
+            <h1 class="certificate-title">AI Verified Certificate – Original</h1>
+            <h2 class="learner-name" id="learnerName">– LOADING...</h2>
+            
+            <div class="verification-badge">
+                <div class="badge-img">
+                    <div class="verified-text">VERIFIED</div>
+                </div>
+            </div>
+
+            <div class="congratulations">
+                🎉 CONGRATULATIONS 🎉
+            </div>
+
+            <div class="certificate-details">
+                <p class="certificate-text">It's a verified certificate from Intern Certify</p>
+                
+                <div class="details-list">
+                    <div class="detail-item">
+                        <span class="label">Learner Full Name :</span> 
+                        <span class="value" id="fullName">Loading...</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Internship Course :</span> 
+                        <span class="value" id="courseName">Loading...</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Duration :</span> 
+                        <span class="value" id="duration">Loading...</span>
+                    </div>
+                </div>
+
+                <p class="security-note">
+                    <em>The details accessed via the QR code are secure and will only display the information related to the learner's internship.</em>
+                </p>
+            </div>
+        </div>
+
+        <!-- Error Message (hidden by default) -->
+        <div class="error-container" id="errorContainer" style="display: none;">
+            <h2>Certificate Not Found</h2>
+            <p>The requested certificate could not be found. Please check the URL and try again.</p>
+            <div class="available-certificates">
+                <h3>Available Certificates:</h3>
+                <ul id="availableCertsList">
+                    <!-- This will be populated dynamically by JavaScript -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading-container" id="loadingContainer" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>Loading certificate...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
